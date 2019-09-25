@@ -1,6 +1,6 @@
 /* 
- * nguyed4-
- * nguyed4
+ * Duy Nguyen
+ * nguyed4@mail.uc.eu
  * Printing pyramids using loops. It kind-of works. 
  * What I really want is
         1
@@ -12,14 +12,16 @@
 package main;
 
 public class Main {
-
-	public static void main(String[] args) {
-		int lines = 5;
-		for (int i = 0; i < lines; i++) {
-			for (int j = 0; j < i+1; j++) {
-				System.out.print(j);
-			}
-			System.out.println("");
-		}
+	public static void main(String args[]) {        
+	 for (int i = 1; i < 5; i++) {
+	            for (int j = 0; j < 5 - i; j++) {
+	                System.out.print(" ");
+	            }
+	            for (int k = 0; k <= i; k++) {
+	                System.out.print(k + " ");
+	            }
+	            System.out.println();
+	        }
+	    }
 	}
-}
+
